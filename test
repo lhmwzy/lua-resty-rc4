@@ -1,0 +1,5 @@
+local rc4=require "resty.rc4"
+local str=rc4.crypt("test","34")
+ngx.say(str)
+local str1=rc4.crypt(str,"34")
+ngx.say(str1)
